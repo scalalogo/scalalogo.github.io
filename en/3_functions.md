@@ -22,7 +22,7 @@ The second definition differs from the first one - the parentheses contain somet
 
 1. Play with the example with functions definition - call them, perhaps a few times, try passing various parameters to the function that takes them.
 2. Define a function for drawing a square taking one parameter - side length. Try to make the body of the function shorter than 4 lines of code (see the "Loops" section in the previous chapter). Use the function to draw a big square with a few smaller squares inside of it.
-3. * Write a function drawing a regular polygon. It should get two arguments: number of sides and length of side.
+3. \* Write a function drawing a regular polygon. It should get two arguments: number of sides and length of side.
 
 secion about return type?
 
