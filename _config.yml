@@ -23,4 +23,4 @@ include: [".htaccess"]
 markdown: kramdown
 theme: minima
 incremental: true
-highlighter: pygments
+highlighter: rouge
