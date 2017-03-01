@@ -24,3 +24,5 @@ markdown: kramdown
 theme: minima
 incremental: true
 highlighter: rouge
+sass:
+    sass_dir: _sass
