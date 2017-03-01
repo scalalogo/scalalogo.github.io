@@ -17,9 +17,10 @@ title: ScalaLogo
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "http://example.com" # the base hostname & protocol for your site
 repository: scalalogo/scalalogo.github.io
-include: ["pl", "en", ".htaccess"]
+include: [".htaccess"]
 
 # Build settings
 markdown: kramdown
 theme: minima
 incremental: true
+highlighter: pygments
