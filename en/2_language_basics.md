@@ -41,6 +41,11 @@ Sometimes we might want to perform some action depending on some condition. This
 * `n % 2 == 0` - true if n is even
 * `n % 2 != 0` - true if n is odd
 
+We might want to check more than one condition:
+
+* if we want all of given conditions to be true, we combine them with `&&` - e.g.: `a == 1 && b == 2 && c == 3`,
+* if we want at least one of given conditions to be true, we combine them with `||` - e.g.: `a == 1 || b == 2 || c == 3`.
+
 The simplest example would be if we wanted to run some code only if some condition was true.
 
 ```scala
@@ -56,6 +61,39 @@ if (condition) {
   //the code here is executed only if the condition is true
 } else {
   //the code here is executed only if the condition is false
+}
+```
+
+Another possibility is that if the first condition is false we want to check another one. And if that one is also false we want to check yet another one and so on. This can be achieved by writing the following:
+
+```scala
+if (condition1) {
+  //codeA
+} else if (condition2) {
+  //codeB
+} else if (condition3) {
+  //codeC
+} else {
+  //codeD
+}
+```
+
+In the sample above:
+
+* if `condition1` is true, "codeA" will be executed,
+* if `condition1` is false but `condition2` is true, "codeB" will be executed,
+* if both `condition1` and `condition2` are false but `condition3` is true, "codeC" will be executed,
+* if all `condition1`, `condition2` and `condition3` are false, "codeD" will be executed.
+
+It might also be worth mentioning that the last `else {...}` is optional - we don't have to write it if we don't want to execute anything if all `condition1`, `condition2` and `condition3` are false. Then the codde would look like this:
+
+```scala
+if (condition1) {
+  //codeA
+} else if (condition2) {
+  //codeB
+} else if (condition3) {
+  //codeC
 }
 ```
 
