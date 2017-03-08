@@ -17,6 +17,8 @@ The general idea is that there is a "turtle" that can move on an area drawing li
 * `hide()` hides the turtle from view. Visibility of the turtle does not influence drawing in any way.
 * `setColor(color)` changes the color of lines drawn by the turtle. You can use a set of predefined colors (white, silver, gray, black, red, maroon, yellow, olive, lime, green, aqua, teal, blues, navy, fuchsia, purple) or create your own. For the former option you simply write `setColor(Color.Blue)`. The latter option is used as following: `setColor(Color(30, 40, 50))`, where 30, 40 and 50 stand for red, green and blue respectively, in the range 0 to 255 (for more information on RGB color model see [here](https://en.wikipedia.org/wiki/RGB_color_model).
 
+In addition, you can use `write(something)` for debugging purposes. This will show a textual representation of whatever is passed as `something` under the management buttons.
+
 ### Example
 
 Let's say we want to draw a regular hexagon but in a special way - we only draw every second side, each in a different color.
@@ -27,7 +29,7 @@ TODO iframe
 
 ### Excercises:
 
-1. Draw a regular ectagon in a similar way (only every second side and each in a different color).  
+1. Draw a regular octagon in a similar way (only every second side and each in a different color).  
     Hint: You will have to change the rotation angle!
 2. Draw a star pentagon.
 
