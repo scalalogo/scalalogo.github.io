@@ -31,7 +31,7 @@ We might also want to base the new value of a variable on a previous value. For 
 
 Let's create a beginning of a square spiral. We'll start with a segment of length 10 and 90 degrees rotation and repeat that a few times, extending the length of each next segment by 10.
 
-<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/27"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/50"></iframe>
 
 ## Conditionals
 
@@ -114,7 +114,7 @@ We will use it in the example below - it's very similar to the previous one, tak
 
 ## Loops
 
-Very often we want to execute the same (or similar) piece of code consecutively. The simplest way to achieve this (which is not a part of Scala Standard Library nor is it a loop) is:
+Very often we want to execute the same (or similar) piece of code consecutively. The simplest way to achieve this is:
 
 ```scala
 repeat(10) {
@@ -176,7 +176,7 @@ In the example below you can see how the `while` loop was used for creating the 
 * `for` ([&#8594;](/en/solutions#ex2.1.b))
 * `while` ([&#8594;](/en/solutions#ex2.1.c))
 
-<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/49"></iframe>
 
 [Back to table of contents](/en)
 

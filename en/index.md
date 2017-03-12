@@ -10,7 +10,7 @@ On this page you will learn basics of programming in a fun way. The tutorials ar
 
 The tutorials are based on a mini-library written in Scala that was created to enable drawing turtle graphics in a way similar to Logo. They are enriched with live examples thanks to [ScalaFiddles](https://scalafiddle.io/). Each fiddle has a sample of code that will be run - you can see the result right next to the code. However, nothing will happen, until you tell it to. Below the drawing plane you can see a few management buttons with which you can:
 
-* adjust how long it takes to make one action (in milliseconds),
+* adjust how long it takes to make one action (the higher the number is, the slower the turtle moves),
 * make the turtle move consecutively (according to the code on the left) or stop,
 * make it perform a single action (move, rotation, etc.),
 * show or hide it.

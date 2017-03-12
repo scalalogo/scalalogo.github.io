@@ -27,14 +27,6 @@ The second definition differs from the first one - the parentheses contain somet
 
 In our case we can see that two arguments should be passed to the `moveAndRotate` function and both of them should be integers. Now, let's see how the arguments are used inside the body of the function. They are simply treated like any other variable in the scope. The only difference is that it's value is not defined here - it will depend on the value passed to the function (and each time the function is called this value can be different). To be precise, the arguments are treated as `val` variables, so if you have a parameter named `size` you won't be able to assign another value to it (e.g. decrease it by 2: `size = size - 2`)
 
-### Excercises:
-
-1. Play with the example with functions definition - call them, perhaps a few times, try passing various parameters to the function that takes them.
-2. Define a function for drawing a square taking one parameter - side length. Try to make the body of the function as short as possible (see the "Loops" section in the previous chapter). Use the function to draw a big square with a few smaller squares inside of it. ([&#8594;](/en/solutions#ex3.2))
-3. \* Write a function drawing a regular polygon. It should get two arguments: the number of sides and the length of a side. ([&#8594;](/en/solutions#ex3.3))
-
-<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
-
 In our example, both functions had the purpose of performing some action. However, functions can also be used to perform some calculation and return a result that can be further used in the code. In general, Scala does not require defining the return type of the function (which was used in the example), but sometimes it might be necessary (see next chapter - "Recursion") and sometimes it's just a good practice, for code clarity. The return type of the function is defined between the parameter list and the body of the function. In case of functions that are supposed to perform actions and not return any value, the return type should be `Unit`. This means that we can change the definitions in the example by adding `: Unit` right after the parameter list, e.g.:
 
 ```scala
@@ -59,6 +51,14 @@ def booleanToColor(b: Boolean): Color = {
   if (b) Color.Red else Color.Green
 }
 ```
+
+### Excercises:
+
+1. Play with the example with functions definition - call them, perhaps a few times, try passing various parameters to the function that takes them.
+2. Define a function for drawing a square taking one parameter - side length. Try to make the body of the function as short as possible (see the "Loops" section in the previous chapter). Use the function to draw a big square with a few smaller squares inside of it. ([&#8594;](/en/solutions#ex3.2))
+3. \* Write a function drawing a regular polygon. It should get two arguments: the number of sides and the length of a side. ([&#8594;](/en/solutions#ex3.3))
+
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/49"></iframe>
 
 [Back to table of contents](/en)
 
