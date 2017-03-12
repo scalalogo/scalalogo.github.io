@@ -26,14 +26,14 @@ In addition, any line starting with `//` is a so called comment - it isn't treat
 
 Let's say we want to draw a regular hexagon but in a special way - we only draw every second side, each in a different color.
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/23"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/23"></iframe>
 
 ### Excercises:
 
 1. Draw a regular octagon in a similar way (only every second side and each in a different color). Hint: You will have to change the rotation angle! ([&#8594;](/en/solutions#ex1.1))
 2. Draw a star pentagon. ([&#8594;](/en/solutions#ex1.2))
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
 [Back to Table of contents](/en)
 

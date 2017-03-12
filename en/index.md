@@ -26,4 +26,4 @@ After running the code you might get a message in English like this: "Too many a
 3. [Functions](/en/3_functions)
 4. [Recursion](/en/4_recursion)
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/22"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/22"></iframe>

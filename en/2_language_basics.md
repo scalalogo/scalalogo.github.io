@@ -12,7 +12,7 @@ layout: default
 
 In the example in the previous chapter, we always moved the turtle 60 steps. Imagine that now you want to make the same drawing but twice as big. You would have to change that 60 to 120 in each place separately. Instead, you could create a variable: `val size = 60` and then use it in all places this way: `move(size)`. This way, changing the size of the drawing would require changing only one line: writing `val size = 120` instead of `val size = 60`.
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/26"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/26"></iframe>
 
 
 Another way of creating a variable is: `var size = 60`, which differs from the previous one in the first word - it's `var` instead of `val`. If a variable is declared as a `var`, it means that it's value can change during the execution of a program:
@@ -31,7 +31,7 @@ We might also want to base the new value of a variable on a previous value. For 
 
 Let's create a beginning of a square spiral. We'll start with a segment of length 10 and 90 degrees rotation and repeat that a few times, extending the length of each next segment by 10.
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/27"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/27"></iframe>
 
 ## Conditionals
 
@@ -104,13 +104,13 @@ if (condition1) {
 
 We will use it in the example below to create a triangle - a green one if the size is greater than 100, a red one otherwise. Try changing the value of size and see the result.
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/47"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/47"></iframe>
 
 It is also possible to depend a value assinged to a variable on some condition in a very concise way like this: `val s = if (n >= 0) n else -n`. This snippet assigns the value of n to s if n is non-negative and the opposite number (-n) if n is negative - either way, the value of s won't be negative.
 
 We will use it in the example below - it's very similar to the previous one, take a look.
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/28"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/28"></iframe>
 
 ## Loops
 
@@ -166,7 +166,7 @@ The `condition` here can be any statement with a boolean value (see the "Conditi
 
 In the example below you can see how the `while` loop was used for creating the quadratic spiral until the length of the side was larger than 150.
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/29"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/29"></iframe>
 
 ### Excercises:
 
@@ -176,7 +176,7 @@ In the example below you can see how the `while` loop was used for creating the 
 * `for` ([&#8594;](/en/solutions#ex2.1.b))
 * `while` ([&#8594;](/en/solutions#ex2.1.c))
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
 [Back to table of contents](/en)
 

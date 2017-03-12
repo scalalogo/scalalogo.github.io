@@ -20,13 +20,13 @@ What's very important is that the recursion has to stop somewhen. This means tha
 
 Now let's try to use a simple recursion for creating some graphics. Again, we'll draw a square spiral, but this time we'll do it starting with the longest segment.
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/36"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/36"></iframe>
 
 Recursion in graphics is often used to create [fractals](https://en.wikipedia.org/wiki/Fractal). Below you can see some more advanced examples of a tree and [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern)
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/38"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/38"></iframe>
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/41"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/41"></iframe>
 
 ### Excercises
 
@@ -34,7 +34,7 @@ Recursion in graphics is often used to create [fractals](https://en.wikipedia.or
 2. Draw a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle). ([&#8594;](/en/solutions#ex4.2))
 3. Draw a [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake). ([&#8594;](/en/solutions#ex4.3))
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
+<iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
 [Back to table of contents](/en)
 
