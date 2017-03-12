@@ -2,8 +2,9 @@
 layout: default
 ---
 
-[Back to Table of contents](/en)  
-[Next: Variables, conditionals and loops](/en/2_language_basics)  
+[Back to Table of contents](/en)
+
+[Next: Variables, conditionals and loops](/en/2_language_basics)
 
 ## Introduction
 
@@ -29,15 +30,11 @@ Let's say we want to draw a regular hexagon but in a special way - we only draw 
 
 ### Excercises:
 
-1. Draw a regular octagon in a similar way (only every second side and each in a different color).  
-    Hint: You will have to change the rotation angle!
-
-    [link](https://scalafiddle.io/sf/okXrWZp/24)
-2. Draw a star pentagon.
-
-	[link](https://scalafiddle.io/sf/okXrWZp/25)
+1. Draw a regular octagon in a similar way (only every second side and each in a different color). Hint: You will have to change the rotation angle! ([&#8594;](/en/solutions#ex1.1))
+2. Draw a star pentagon. ([&#8594;](/en/solutions#ex1.2))
 
 <iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
-[Back to Table of contents](/en)  
+[Back to Table of contents](/en)
+
 [Next: Variables, conditionals and loops](/en/2_language_basics)

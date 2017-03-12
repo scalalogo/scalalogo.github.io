@@ -2,9 +2,11 @@
 layout: default
 ---
 
-[Back to table of contents](/en)  
-[Previous: Variables, conditionals and loops](/en/2_language_basics)  
-[Next: Recursion](/en/4_recursion)  
+[Back to table of contents](/en)
+
+[Previous: Variables, conditionals and loops](/en/2_language_basics)
+
+[Next: Recursion](/en/4_recursion)
 
 ## Functions
 
@@ -28,13 +30,8 @@ In our case we can see that two arguments should be passed to the `moveAndRotate
 ### Excercises:
 
 1. Play with the example with functions definition - call them, perhaps a few times, try passing various parameters to the function that takes them.
-2. Define a function for drawing a square taking one parameter - side length. Try to make the body of the function as short as possible (see the "Loops" section in the previous chapter). Use the function to draw a big square with a few smaller squares inside of it.
-
-[link](https://scalafiddle.io/sf/okXrWZp/34)
-
-3. \* Write a function drawing a regular polygon. It should get two arguments: the number of sides and the length of a side.
-
-[link](https://scalafiddle.io/sf/okXrWZp/35)
+2. Define a function for drawing a square taking one parameter - side length. Try to make the body of the function as short as possible (see the "Loops" section in the previous chapter). Use the function to draw a big square with a few smaller squares inside of it. ([&#8594;](/en/solutions#ex3.2))
+3. \* Write a function drawing a regular polygon. It should get two arguments: the number of sides and the length of a side. ([&#8594;](/en/solutions#ex3.3))
 
 <iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
@@ -63,6 +60,8 @@ def booleanToColor(b: Boolean): Color = {
 }
 ```
 
-[Back to table of contents](/en)  
-[Previous: Variables, conditionals and loops](/en/2_language_basics)  
+[Back to table of contents](/en)
+
+[Previous: Variables, conditionals and loops](/en/2_language_basics)
+
 [Next: Recursion](/en/4_recursion)

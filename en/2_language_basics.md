@@ -2,9 +2,11 @@
 layout: default
 ---
 
-[Back to table of contents](/en)  
-[Previous: Introduction](/en/1_introduction)  
-[Next: Functions](/en/3_functions)  
+[Back to table of contents](/en)
+
+[Previous: Introduction](/en/1_introduction)
+
+[Next: Functions](/en/3_functions)
 
 ## Variables
 
@@ -168,14 +170,16 @@ In the example below you can see how the `while` loop was used for creating the 
 
 ### Excercises:
 
-1. Create similar triangle spirals using `repeat`, `for`, and `while` but starting from the longest segment.
+1. Create similar triangle spirals but starting from the longest segment. Do it using:
+
+* `repeat` ([&#8594;](/en/solutions#ex2.1.a)) 
+* `for` ([&#8594;](/en/solutions#ex2.1.b))
+* `while` ([&#8594;](/en/solutions#ex2.1.c))
 
 <iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
-[link](https://scalafiddle.io/sf/okXrWZp/30)
-[link](https://scalafiddle.io/sf/okXrWZp/31)
-[link](https://scalafiddle.io/sf/okXrWZp/32)
+[Back to table of contents](/en)
 
-[Back to table of contents](/en)  
-[Previous: Introduction](/en/1_introduction)  
+[Previous: Introduction](/en/1_introduction)
+
 [Next: Functions](/en/3_functions)

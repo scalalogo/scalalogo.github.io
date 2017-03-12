@@ -2,8 +2,9 @@
 layout: default
 ---
 
-[Back to table of contents](/en)  
-[Previous: Functions](/en/3_functions) 
+[Back to table of contents](/en)
+
+[Previous: Functions](/en/3_functions)
 
 ## Recursion
 
@@ -29,19 +30,12 @@ Recursion in graphics is often used to create [fractals](https://en.wikipedia.or
 
 ### Excercises
 
-1. Draw a [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet).
-
-[link](https://embed.scalafiddle.io/embed?sfid=okXrWZp/44)
-
-2. Draw a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle).
-
-[link](https://embed.scalafiddle.io/embed?sfid=okXrWZp/45)
-
-3. Draw a [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake).
-
-[link](https://embed.scalafiddle.io/embed?sfid=okXrWZp/46)
+1. Draw a [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet). ([&#8594;](/en/solutions#ex4.1))
+2. Draw a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle). ([&#8594;](/en/solutions#ex4.2))
+3. Draw a [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake). ([&#8594;](/en/solutions#ex4.3))
 
 <iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
-[Back to table of contents](/en)  
+[Back to table of contents](/en)
+
 [Previous: Functions](/en/3_functions)
