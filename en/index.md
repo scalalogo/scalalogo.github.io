@@ -17,6 +17,8 @@ The tutorials are based on a mini-library written in Scala that was created to e
 
 The code is editable. If you make any changes to it or just want to run it once again, click the _Run_ button above the code. You can always restore the code to its original version with the _Reset_ button. This will only revert the code changes - again, click the _Run_ button to reset the application as well.
 
+After running the code you might get a message in English like this: "Too many actions!". This means that your code created more actions to perform than allowed. If you see it, it's possible that you have created an infinite loop or an infinite recursion (you'll learn about loops and recursion in further chapters).
+
 ## Table of contents
 
 1. [Introduction](/en/1_introduction)
@@ -24,4 +26,4 @@ The code is editable. If you make any changes to it or just want to run it once 
 3. [Functions](/en/3_functions)
 4. [Recursion](/en/4_recursion)
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/14"></iframe>
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/22"></iframe>

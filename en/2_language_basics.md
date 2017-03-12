@@ -8,11 +8,12 @@ layout: default
 
 ## Variables
 
-In the example in the previous chapter, we always moved the turtle 30 steps. Imagine that now you want to make the same drawing but twice as big. You would have to change that 30 to 60 in each place separately. Instead, you could create a variable: `val size = 30` and then use it in all places this way: `move(size)`. This way, changing the size of the drawing would only require changing only one line: writing `val size = 60` instead of `val size = 30`.
+In the example in the previous chapter, we always moved the turtle 60 steps. Imagine that now you want to make the same drawing but twice as big. You would have to change that 60 to 120 in each place separately. Instead, you could create a variable: `val size = 60` and then use it in all places this way: `move(size)`. This way, changing the size of the drawing would require changing only one line: writing `val size = 120` instead of `val size = 60`.
 
-TODO iframe
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/26"></iframe>
 
-Another way of creating a variable is: `var size = 30`, which differs from the previous one in the first word - it's `var` instead of `val`. If a variable is declared as a var, it means that it's value can change during the execution of a program:
+
+Another way of creating a variable is: `var size = 60`, which differs from the previous one in the first word - it's `var` instead of `val`. If a variable is declared as a `var`, it means that it's value can change during the execution of a program:
 
 ```scala
 var size = 20
@@ -22,11 +23,13 @@ size = 30
 
 This would not be possible if a variable was a val.
 
+We might also want to base the new value of a variable on a previous value. For example `size = size + 10` would increase the variable size by ten. The same thing can be written as `size += 10`. You could also use `*` for multiplying instead of increasing, `-` for decreasing or `/` for dividing.
+
 ### Example
 
 Let's create a beginning of a square spiral. We'll start with a segment of length 10 and 90 degrees rotation and repeat that a few times, extending the length of each next segment by 10.
 
-TODO iframe
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/27"></iframe>
 
 ## Conditionals
 
@@ -85,7 +88,7 @@ In the sample above:
 * if both `condition1` and `condition2` are false but `condition3` is true, "codeC" will be executed,
 * if all `condition1`, `condition2` and `condition3` are false, "codeD" will be executed.
 
-It might also be worth mentioning that the last `else {...}` is optional - we don't have to write it if we don't want to execute anything if all `condition1`, `condition2` and `condition3` are false. Then the codde would look like this:
+It might also be worth mentioning that the last `else {...}` is optional - we don't have to write it if we don't want to execute anything if all `condition1`, `condition2` and `condition3` are false. Then the code would look like this:
 
 ```scala
 if (condition1) {
@@ -97,13 +100,15 @@ if (condition1) {
 }
 ```
 
-TODO examples
+We will use it in the example below to create a triangle - a green one if the size is greater than 100, a red one otherwise. Try changing the value of size and see the result.
+
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/47"></iframe>
 
 It is also possible to depend a value assinged to a variable on some condition in a very concise way like this: `val s = if (n >= 0) n else -n`. This snippet assigns the value of n to s if n is non-negative and the opposite number (-n) if n is negative - either way, the value of s won't be negative.
 
-We will use it in the example below to create a triangle - a green one if size is greater than 30, a red one otherwise. Try changing the value of size and see the result.
+We will use it in the example below - it's very similar to the previous one, take a look.
 
-TODO iframe
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/28"></iframe>
 
 ## Loops
 
@@ -129,7 +134,7 @@ repeat(N + 2) {
 
 In the example above "code A" will be repeated 5 times, and "code B" will be repeated 7 times.
 
-The `repeat` construct allows only simple repetition. For example, we wouldn't be able to use it in our example for drawing a square spiral. However, we could use a `for` loop.
+The `repeat` construct allows only simple repetition. We would be able to use it in our example for drawing a square spiral but it would be better to use a `for` loop.
 
 ```scala
 for(i <- 1 to 10) {
@@ -140,7 +145,7 @@ for(i <- 1 to 10) {
 
 In this example the code inside braces will be executed 10 times. Why? Because of `i <- 1 to 10` - this means that during each subsequent execution the variable `i` will have different value: starting with 1, then 2, 3, and so on, and finally 10, which together makes ten times! As a result we will draw ten sides of a spiral - with lengths 10, 20, 30, ..., 100 respectively.
 
-There are various other forms of `for` loops in Scala, however we won't go into details about them.
+There are various other forms of `for` loops in Scala, however we won't go into further details about them.
 
 Another similar construct is a `while` loop.
 
@@ -157,11 +162,19 @@ The `condition` here can be any statement with a boolean value (see the "Conditi
 2. if it's false, all the code in braces is omitted and the execution moves to "some other code"
 3. if it's true, the code in braces is executed and then **we go back to point 1**
 
-In the example below you can see how the `while` loop was used for creating the quadratic spiral until the length of the side was larger than 200.
+In the example below you can see how the `while` loop was used for creating the quadratic spiral until the length of the side was larger than 150.
 
-TODO iframe
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/29"></iframe>
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/8"></iframe>
+### Excercises:
+
+1. Create similar triangle spirals using `repeat`, `for`, and `while` but starting from the longest segment.
+
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
+
+[link](https://scalafiddle.io/sf/okXrWZp/30)
+[link](https://scalafiddle.io/sf/okXrWZp/31)
+[link](https://scalafiddle.io/sf/okXrWZp/32)
 
 [Back to table of contents](/en)  
 [Previous: Introduction](/en/1_introduction)  

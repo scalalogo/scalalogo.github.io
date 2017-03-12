@@ -16,22 +16,28 @@ The general idea is that there is a "turtle" that can move on an area drawing li
 * `show()` makes the turtle visible.
 * `hide()` hides the turtle from view. Visibility of the turtle does not influence drawing in any way.
 * `setColor(color)` changes the color of lines drawn by the turtle. You can use a set of predefined colors (white, silver, gray, black, red, maroon, yellow, olive, lime, green, aqua, teal, blues, navy, fuchsia, purple) or create your own. For the former option you simply write `setColor(Color.Blue)`. The latter option is used as following: `setColor(Color(30, 40, 50))`, where 30, 40 and 50 stand for red, green and blue respectively, in the range 0 to 255 (for more information on RGB color model see [here](https://en.wikipedia.org/wiki/RGB_color_model).
+* setInterval(interval) changes how long it takes to perform one action.
+* write(something) can be used for debugging purposes. It will show a textual representation of whatever is passed as `something` under the management buttons. 
 
-In addition, you can use `write(something)` for debugging purposes. This will show a textual representation of whatever is passed as `something` under the management buttons.
+In addition, any line starting with `//` is a so called comment - it isn't treated as a code and doesn't get executed.
 
 ### Example
 
 Let's say we want to draw a regular hexagon but in a special way - we only draw every second side, each in a different color.
 
-TODO iframe
-
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/8"></iframe>
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/23"></iframe>
 
 ### Excercises:
 
 1. Draw a regular octagon in a similar way (only every second side and each in a different color).  
     Hint: You will have to change the rotation angle!
+
+    [link](https://scalafiddle.io/sf/okXrWZp/24)
 2. Draw a star pentagon.
+
+	[link](https://scalafiddle.io/sf/okXrWZp/25)
+
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
 [Back to Table of contents](/en)  
 [Next: Variables, conditionals and loops](/en/2_language_basics)

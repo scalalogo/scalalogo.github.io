@@ -19,20 +19,29 @@ What's very important is that the recursion has to stop somewhen. This means tha
 
 Now let's try to use a simple recursion for creating some graphics. Again, we'll draw a square spiral, but this time we'll do it starting with the longest segment.
 
-TODO iframe
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/36"></iframe>
 
-Below you can see some more advanced examples of [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern) and two versions of trees
+Recursion in graphics is often used to create [fractals](https://en.wikipedia.org/wiki/Fractal). Below you can see some more advanced examples of a tree and [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern)
 
-TODO iframe with a fern
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/38"></iframe>
 
-TODO iframe with a tree
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/41"></iframe>
 
 ### Excercises
 
 1. Draw a [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet).
+
+[link](https://embed.scalafiddle.io/embed?sfid=okXrWZp/44)
+
 2. Draw a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle).
 
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/8"></iframe>
+[link](https://embed.scalafiddle.io/embed?sfid=okXrWZp/45)
+
+3. Draw a [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake).
+
+[link](https://embed.scalafiddle.io/embed?sfid=okXrWZp/46)
+
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
 [Back to table of contents](/en)  
 [Previous: Functions](/en/3_functions)

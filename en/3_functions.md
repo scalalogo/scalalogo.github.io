@@ -10,7 +10,7 @@ layout: default
 
 Functions are samples of code that can be called by their name for execution. See the example below including two function definitions.
 
-TODO iframe
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/33"></iframe>
 
 First of all if you try to run the app, you will see that nothing is being drawn - this is because the code consists of only two function definitions and we have to call them to make them execute. How do you call a function? This is easy and you already know it! Every time you write `move(...)` or `rotate(...)` or `up()`/`down()` etc. you call a function. So here it would be as simple as writing `move40andRotate90()` or `moveAndRotate(40, 90)`.
 
@@ -23,13 +23,20 @@ The second definition differs from the first one - the parentheses contain somet
 * `String` for text,
 * `Boolean` for true/false conditions.
 
-In our case we can see that two arguments should be passed to the `moveAndRotate` function and both of them should be decimal. Now, let's see how the arguments are used inside the body of the function. They are simply treated like any other variable in the scope. The only difference is that it's value is not defined here - it will depend on the value passed to the function (and each time the function is called this value can be different). To be precise, the arguments are treated as `val` variables, so if you have a parameter named `size` you won't be able to assign another value to it (e.g. decrease it by 2: `size = size - 2`)
+In our case we can see that two arguments should be passed to the `moveAndRotate` function and both of them should be integers. Now, let's see how the arguments are used inside the body of the function. They are simply treated like any other variable in the scope. The only difference is that it's value is not defined here - it will depend on the value passed to the function (and each time the function is called this value can be different). To be precise, the arguments are treated as `val` variables, so if you have a parameter named `size` you won't be able to assign another value to it (e.g. decrease it by 2: `size = size - 2`)
 
 ### Excercises:
 
 1. Play with the example with functions definition - call them, perhaps a few times, try passing various parameters to the function that takes them.
-2. Define a function for drawing a square taking one parameter - side length. Try to make the body of the function shorter than 4 lines of code (see the "Loops" section in the previous chapter). Use the function to draw a big square with a few smaller squares inside of it.
+2. Define a function for drawing a square taking one parameter - side length. Try to make the body of the function as short as possible (see the "Loops" section in the previous chapter). Use the function to draw a big square with a few smaller squares inside of it.
+
+[link](https://scalafiddle.io/sf/okXrWZp/34)
+
 3. \* Write a function drawing a regular polygon. It should get two arguments: the number of sides and the length of a side.
+
+[link](https://scalafiddle.io/sf/okXrWZp/35)
+
+<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/48"></iframe>
 
 In our example, both functions had the purpose of performing some action. However, functions can also be used to perform some calculation and return a result that can be further used in the code. In general, Scala does not require defining the return type of the function (which was used in the example), but sometimes it might be necessary (see next chapter - "Recursion") and sometimes it's just a good practice, for code clarity. The return type of the function is defined between the parameter list and the body of the function. In case of functions that are supposed to perform actions and not return any value, the return type should be `Unit`. This means that we can change the definitions in the example by adding `: Unit` right after the parameter list, e.g.:
 
@@ -55,8 +62,6 @@ def booleanToColor(b: Boolean): Color = {
   if (b) Color.Red else Color.Green
 }
 ```
-
-<iframe height="600" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/8"></iframe>
 
 [Back to table of contents](/en)  
 [Previous: Variables, conditionals and loops](/en/2_language_basics)  
