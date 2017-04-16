@@ -26,3 +26,6 @@ incremental: true
 highlighter: rouge
 sass:
     sass_dir: _sass
+
+font_awesome :
+  enabled : true

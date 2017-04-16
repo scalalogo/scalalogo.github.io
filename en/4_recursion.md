@@ -8,12 +8,18 @@ layout: default
 
 ## Recursion
 
-Recursion occurs when the function calls itself inside of its body. Let's start with a non-graphical example. We'll write a recursive function for calculating a sum of integer numbers from 0 to given `n`. Keep in mind that we do this just to help you understand the concept as this can (and normally should) be done without recursion. You can write such a function as an excercise, below you can see a recursive version. Another thing that should be mentioned here is that in case of recursive functions, Scala requires you to explicitly declare the return type
+Recursion occurs when the function calls itself inside of its body. Let's start with a non-graphical example. We'll write a recursive function for calculating a sum of integer numbers from 0 to given `n`. Keep in mind that we do this just to help you understand the concept as this can (and normally should) be done without recursion. You can write such a function as an excercise, below you can see a recursive version. Another thing that should be mentioned here is that in case of recursive functions, Scala requires you to explicitly declare the return type.
 
 ```scala
 def sum(n: Int): Int = {
   if (n <= 0) 0 else n + sum(n - 1)
 }
+```
+
+Suppose we call this function with the argument of value `2`. Then it would be calculated as follows:
+
+```
+sum(2) = 2 + sum(1) = 2 + 1 + sum(0) = 2 + 1 + 0 = 3
 ```
 
 What's very important is that the recursion has to stop somewhen. This means that we cannot call the function recursively all the time, unconditionally. In the example if the argument is 0 we simply return 0. Only for positive arguments we actually create recursion (with argument decreased by 1) to get the sum from `0` to `n - 1` and return it increased by `n`.

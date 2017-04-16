@@ -6,14 +6,16 @@ layout: default
 
 On this page you will learn basics of programming in a fun way. The tutorials are inspired by the [Logo language](https://en.wikipedia.org/wiki/Logo_(programming_language)) adapted to [Scala](https://www.scala-lang.org/). This way you can get a grasp of a modern, popular programming language by having fun creating turtle graphics!
 
+The turtle graphics is a popular way for introducing programming to kids. The turtle is like a small robot (represented as a triangle) that moves according to your commands and leaves a trace so you can use it to draw whatever you want!
+
 ## Overview
 
 The tutorials are based on a mini-library written in Scala that was created to enable drawing turtle graphics in a way similar to Logo. They are enriched with live examples thanks to [ScalaFiddles](https://scalafiddle.io/). Each fiddle has a sample of code that will be run - you can see the result right next to the code. However, nothing will happen, until you tell it to. Below the drawing plane you can see a few management buttons with which you can:
 
-* adjust how long it takes to make one action (the higher the number is, the slower the turtle moves),
-* make the turtle move consecutively (according to the code on the left) or stop,
-* make it perform a single action (move, rotation, etc.),
-* show or hide it.
+* adjust how long it takes to make one action next to <i class="fa fa-clock-o"></i> (the higher the number is, the slower the turtle moves),
+* make the turtle move consecutively (according to the code on the left) with <i class="fa fa-play"></i> or stop it with <i class="fa fa-pause"></i>,
+* make it perform a single action (move, rotation, etc.) with <i class="fa fa-step-forward"></i>,
+* show or hide it with <i class="fa fa-low-vision"></i>.
 
 The code is editable. If you make any changes to it or just want to run it once again, click the _Run_ button above the code. You can always restore the code to its original version with the _Reset_ button. This will only revert the code changes - again, click the _Run_ button to reset the application as well.
 
