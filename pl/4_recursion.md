@@ -2,13 +2,15 @@
 layout: default
 ---
 
-[Back to table of contents](/en)
+[Strona główna](/pl)
 
-[Previous: Functions](/en/3_functions)
+[Poprzedni rozdział: Funkcje](/pl/3_functions)
 
-## Recursion
+## Rekurencja
 
-Recursion occurs when the function calls itself inside of its body. Let's start with a non-graphical example. We'll write a recursive function for calculating a sum of integer numbers from 0 to given `n`. Keep in mind that we do this just to help you understand the concept as this can (and normally should) be done without recursion. You can write such a function as an excercise, below you can see a recursive version. Another thing that should be mentioned here is that in case of recursive functions, Scala requires you to explicitly declare the return type.
+Pamiętaj, że ten rozdział jest o wiele bardziej zaawansowany od poprzednich, więc nie przejmuj się, jeśli będzie on dla Ciebie trudny.
+
+Rekurencja występuje, gdy funkcja wywołuje samą siebie w swoim ciele. Zacznijmy od przykładu niezwiązanego z rysowaniem. Napiszemy rekurencyjną funkcję do liczenia sumy liczb całkowitych od `0` do podanego `n`. Pamiętaj, że robimy tylko po to, by pomóc Ci zrozumieć pojęcie rekurencji, bo takie obliczenia mogą być (i normalnie powinny być) wykonane bez rekurencji. Możesz napisać taką funkcję jako ćwiczenie, a poniżej możesz zobaczyć rekurencyjną wersję. Należy również wspomnieć, że w przypadku funkcji rekurencyjnych, Scala wymaga jawnego podania typu zwracanego.
 
 ```scala
 def sum(n: Int): Int = {
@@ -16,34 +18,34 @@ def sum(n: Int): Int = {
 }
 ```
 
-Suppose we call this function with the argument of value `2`. Then it would be calculated as follows:
+Załóżmy, że wywołujemy tę funkcję z argumentem o wartości `2`. Wówczas zostałaby ona obliczona następująco:
 
 ```
 sum(2) = 2 + sum(1) = 2 + 1 + sum(0) = 2 + 1 + 0 = 3
 ```
 
-What's very important is that the recursion has to stop somewhen. This means that we cannot call the function recursively all the time, unconditionally. In the example if the argument is 0 we simply return 0. Only for positive arguments we actually create recursion (with argument decreased by 1) to get the sum from `0` to `n - 1` and return it increased by `n`.
+Bardzo istotne jest, że rekurencja musi się kiedyś skończyć. Oznacza to, że nie możemy wywoływać funkcji rekurencyjny cały czas, bezwarunkowo. W powyższym przykładzie jeśli argument wynosi 0, zwracamy po prostu 0. Tylko dla dodatnich agrumentów rzeczywiście tworzymy rekurencję (z argumentem mniejszym o 1), by obliczyć sumę liczb od `0` do `n - 1` i zwrócić ją powiększoną o `n`.
 
-Now let's try to use a simple recursion for creating some graphics. Again, we'll draw a square spiral, but this time we'll do it starting with the longest segment.
+Teraz spróbujmy użyć prostej rekurencji do rysowania. Ponownie narysujemy kwadratową spiralę, ale tym razem zaczniemy od najdłuższego boku.
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/36"></iframe>
 
-Recursion in graphics is often used to create [fractals](https://en.wikipedia.org/wiki/Fractal). Here you can see an example of a tree:
+Rekurencja w grafice jest często używana do tworzenia [fraktali](https://pl.wikipedia.org/wiki/Fraktal). Poniżej możesz zobaczyć przykład rekurencyjnego drzewa:
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/38"></iframe>
 
-And this is a [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern):
+A to jest [paproć Barnsleya](https://pl.wikipedia.org/wiki/Papro%C4%87_Barnsleya):
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/41"></iframe>
 
-### Excercises
+### Ćwiczenia
 
-1. Draw a [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet). ([&#8594;](/en/solutions#ex4.1))
-2. Draw a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle). ([&#8594;](/en/solutions#ex4.2))
-3. Draw a [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake). ([&#8594;](/en/solutions#ex4.3))
+1. Narysuj [dywan Sierpińskiego](https://pl.wikipedia.org/wiki/Dywan_Sierpi%C5%84skiego). ([&#8594;](/pl/solutions#ex4.1))
+2. Narysuj [trójkąt Sierpińskiego](https://pl.wikipedia.org/wiki/Tr%C3%B3jk%C4%85t_Sierpi%C5%84skiego). ([&#8594;](/pl/solutions#ex4.2))
+3. Narysuj [krzywą Kocha](https://pl.wikipedia.org/wiki/Krzywa_Kocha). ([&#8594;](/pl/solutions#ex4.3))
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/49"></iframe>
 
-[Back to table of contents](/en)
+[Strona główna](/pl)
 
-[Previous: Functions](/en/3_functions)
+[Poprzedni rozdział: Funkcje](/pl/3_functions)

@@ -2,30 +2,30 @@
 layout: default
 ---
 
-# Welcome to ScalaLogo!
+# Witaj na stronie ScalaLogo!
 
-On this page you will learn basics of programming in a fun way. The tutorials are inspired by the [Logo programming language](https://en.wikipedia.org/wiki/Logo_(programming_language)) adapted to [Scala](https://www.scala-lang.org/). This way you can get a grasp of a modern, popular programming language by having fun creating turtle graphics!
+Tutaj w przyjemny sposób nauczysz się podstaw programowania. Tutoriale zainspirowane są [językiem programowania Logo](https://pl.wikipedia.org/wiki/Logo_(j%C4%99zyk_programowania)), którego niektóre możliwości zostały przystowane do [Scali](https://www.scala-lang.org/). Dzięki temu, dobrze się bawiąc, nauczysz się podstaw nowoczesnego, popularnego języka programowania, tworząc obrazki przy pomocy tzw. "grafiki żółwia" (ang. _turtle graphics_)!
 
-The turtle graphics is a popular way for introducing programming to kids. The turtle is like a small robot (represented as a triangle) that moves according to your commands and leaves a trace so you can use it to draw whatever you want!
+Grafika żółwia jest powszechnie używana jako wprowadzenie do programowania, zwłaszcza dla dzieci. Żółw jest jakby małym robotem (przedstawionym jako trójkąt), który porusza się według Twoich poleceń i zostawia za sobą ślad, co możesz wykorzystać do narysowania wszystkiego, co tylko chcesz.
 
-## Overview
+## Wstęp
 
-The tutorials are based on a mini-library written in Scala that was created to enable drawing turtle graphics in a way similar to Logo. They are enriched with live examples thanks to [ScalaFiddles](https://scalafiddle.io/). Each example has a sample of code that will be run - you can see the result right next to the code. However, nothing will happen, until you tell it to. Below the drawing plane you can see a few management buttons with which you can:
+Tutoriale bazują na małym środowisku napisanym w Scali, które zostało stworzone, żeby umożliwić rysowanie grafik żółwia w sposób podobny tego dostępnego w Logo. Są wzbogacone o przykłady dzięki [ScalaFiddles](https://scalafiddle.io/). Każdy przykład to fragment kodu - rezultaty jego uruchomienia możesz zobaczyć zaraz obok, po prawej stronie. Nic się jednak nie stanie bez Twojego działania. Poniżej powierzchni do rysowania znajdują się przyciski do zarządzania, dzięki którem możesz:
 
-* adjust how long it takes to make one action next to <i class="fa fa-clock-o"></i> (the higher the number is, the slower the turtle moves),
-* make the turtle move consecutively (according to the code on the left) with <i class="fa fa-play"></i> or stop it with <i class="fa fa-pause"></i>,
-* make it perform a single action (move, rotation, etc.) with <i class="fa fa-step-forward"></i>,
-* show or hide it with <i class="fa fa-low-vision"></i>.
+* regulować, jak długo trwa jedna akcja, obok <i class="fa fa-clock-o"></i> (im wyższa liczba tym wolniej porusza się żółw),
+* sprawić, by żółw wykonywał kolejne akcje pod rząd (zgodnie z kodem po lewej stronie) za pomocą <i class="fa fa-play"></i> lub zatrzymać go dzięki <i class="fa fa-pause"></i>,
+* kazać żółwiowi wykonać jedną akcję (ruch, obrót itd.) za pomocą <i class="fa fa-step-forward"></i>,
+* ukryć lub pokazać żółwia za pomocą <i class="fa fa-low-vision"></i>.
 
-The code is editable. If you make any changes to it or just want to run it once again, click the _Run_ button above the code. You can always restore the code to its original version with the _Reset_ button. This will only revert the code changes - if you want to reset tha application as well, click the _Run_ button.
+Kod można modyfikować. Jeśli wprowadzisz do niego jakieś zmiany lub chcesz go po prostu uruchomić jeszcze raz, kliknij przycik _Run_ znajdujący się nad kodem. Zawsze możesz też przywrócić pierwotną wersję kodu przy pomocu przycisku _Reset_. To jedynie wycofa wszystkie zmiany wprowadzone przez Ciebie w kodzie - aby zresetować również aplikację, kliknij _Run_.
 
-After running the code you might get a message in English like this: _Too many actions!_. This means that your code created more actions to perform than allowed. If you see it, most probably you have created an infinite loop or an infinite recursion (you'll learn about loops and recursion in further chapters).
+Po uruchomieniu kodu możesz zobaczyć wiadommość po angielsku: _Too many actions!_. Oznacza to, że Twój kod stworzył więcej niż dopuszczoną liczbę akcji. Jeśli zobaczysz taką wiadomość, Twój kod najprawdopodobniej zawiera nieskończoną pętlę lub nieskończoną rekurencję (o pętlach i rekurencji dowiesz się więcej w kolejnych rozdziałach).
 
-## Table of contents
+## Spis treści
 
-1. [Introduction](/en/1_introduction)
-2. [Variables, conditionals and loops](/en/2_language_basics)
-3. [Functions](/en/3_functions)
-4. [Recursion](/en/4_recursion)
+1. [Wprowadzenie](/pl/1_introduction)
+2. [Zmienne, wyrażenia warunkowe i pętle](/pl/2_language_basics)
+3. [Funkcje](/pl/3_functions)
+4. [Rekurencja](/pl/4_recursion)
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/22"></iframe>

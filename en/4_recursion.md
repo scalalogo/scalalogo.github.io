@@ -2,13 +2,15 @@
 layout: default
 ---
 
-[Back to table of contents](/en)
+[Back to home page](/en)
 
 [Previous: Functions](/en/3_functions)
 
 ## Recursion
 
-Recursion occurs when the function calls itself inside of its body. Let's start with a non-graphical example. We'll write a recursive function for calculating a sum of integer numbers from 0 to given `n`. Keep in mind that we do this just to help you understand the concept as this can (and normally should) be done without recursion. You can write such a function as an excercise, below you can see a recursive version. Another thing that should be mentioned here is that in case of recursive functions, Scala requires you to explicitly declare the return type.
+Keep in mind that this chapter is much more advanced than the others so don't worry if it becomes hard for you.
+
+Recursion occurs when the function calls itself inside of its body. Let's start with a non-graphical example. We'll write a recursive function for calculating a sum of integer numbers from `0` to given `n`. Remember that we do this just to help you understand the concept as this can (and normally should) be done without recursion. You can write such a function as an excercise, below you can see a recursive version. Another thing that should be mentioned here is that in case of recursive functions, Scala requires you to explicitly declare the return type.
 
 ```scala
 def sum(n: Int): Int = {
@@ -44,6 +46,6 @@ And this is a [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern):
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/49"></iframe>
 
-[Back to table of contents](/en)
+[Back to home page](/en)
 
 [Previous: Functions](/en/3_functions)

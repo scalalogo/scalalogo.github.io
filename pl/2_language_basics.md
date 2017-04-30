@@ -2,20 +2,18 @@
 layout: default
 ---
 
-[Back to table of contents](/en)
+[Strona główna](/pl)
 
-[Previous: Introduction](/en/1_introduction)
+[Poprzedni rozdział: Wprowadzenie](/pl/1_introduction)  
+[Następny rozdział: Funkcje](/pl/3_functions)
 
-[Next: Functions](/en/3_functions)
+## Zmienne
 
-## Variables
-
-In the example in the previous chapter, we always moved the turtle 60 steps. Imagine that now you want to make the same drawing but twice as big. You would have to change that 60 to 120 in each place separately. Instead, you could create a variable: `val size = 60` and then use it in all places this way: `move(size)`. This way, changing the size of the drawing would require changing only one line: writing `val size = 120` instead of `val size = 60`.
+W przykładzie w poprzednim rozdziale, zawsze poruszaliśmy żółwia o 60 kroków. Teraz wyobraź sobie, że chcesz wykonać ten sam rysune, ale dwa razy większy. Trzeba by zmienić te 60 na 120 w każdym miejscu osobno. Zamiast tego, można wprowadzić zmienną: `val size = 60`, a następnie użyć jej we wszystkich miejscach następująco: `move(size)`. W ten sposób zmiana rozmiaru rysunku wymagałaby zmiany tylko jednej linii: napisania `val size = 120` zamiast `val size = 60`.
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/26"></iframe>
 
-
-Another way of creating a variable is: `var size = 60`, which differs from the previous one in the first word - it's `var` instead of `val`. If a variable is declared as a `var`, it means that it's value can change during the execution of a program:
+Innym sposobem tworzenia zmiennej jest `var size = 60`, który różni się od poprzedniego pierwszym słowem - mamy `var` zamiast `val`. Jeśli zmienna zadeklarowana jest jako `var`, oznacza to, że jej wartość może zostać zmieniona w trakcie wykonania programu:
 
 ```scala
 var size = 20
@@ -23,120 +21,120 @@ var size = 20
 size = 30
 ```
 
-This would not be possible if a variable was a val.
+To nie byłoby możliwe, gdyby zmienna była stworzona jako `val`.
 
-We might also want to base the new value of a variable on a previous value. For example `size = size + 10` would increase the variable size by ten. The same thing can be written as `size += 10`. You could also use `*` for multiplying instead of increasing, `-` for decreasing or `/` for dividing.
+Możemy chcieć, żeby nowa wartość zmiennej zależała od jej poprzedniej wartości. Na przykład `size = size + 10` zwiększyłoby rozmiar zmienner `size` o dziesięć. To samo można krócej zapisać jako `size += 10`. Możesz również użyć `*` do mnożenia zamiast dodawania, `-` do odejmowania lub `/` do dzielenia.
 
-### Example
+### Przykład
 
-Let's create a beginning of a square spiral. We'll start with a segment of length 10 and 90 degrees rotation and repeat that a few times, extending the length of each next segment by 10.
+Narysujmy początek kwadratowej spirali. Zaczniemy od odcinka długości 10 i obrotu o 90 stopni i powtórzymy to kilkukrotnie, zwiększając rozmiar każdego kolenego odcinka o 10.
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/50"></iframe>
 
-## Conditionals
+## Wyrażenia warunkowe
 
-Sometimes we might want to perform some action depending on some condition. This is where conditional statements come in handy. In our case the simplest conditions can be based on some properties of numerical variables such as for example:
+Czasem możemy chcieć wykonać jakąś akcję zależnie od pewnego warunku. W takiej sytuacji przydatne są wyrażenia warunkowe. Warunki to wyrażenia logiczne - w naszym przypadku mogą one opierać się na pewnych właściwościach zmiennych liczbowych takich jak na przykład:
 
-* `n > 5` - true if variable n is greater than 5
-* `n >= 5` - true if n is greater than or equals 5
-* `n < 5` - true if n is smaller than 5
-* `n <= 5` - true if n is smaller than or equals 5
-* `n == 5` - true if n equals 5
-* `n != 5` - true if n does not equal 5
-* `n % 2 == 0` - true if n is even
-* `n % 2 != 0` - true if n is odd
+* `n > 5` - prawdziwy, gdy zmienna `n` jest większa niż 5,
+* `n >= 5` - prawdziwy, gdy zmienna `n` jest większa lub równa 5,
+* `n < 5` - prawdziwy, gdy zmienna `n` jest mniejsza niż 5,
+* `n <= 5` - prawdziwy, gdy zmienna `n` jest mniejsza lub równa 5,
+* `n == 5` - prawdziwy, gdy zmienna `n` ma wartość 5,
+* `n != 5` - prawdziwy, gdy zmienna `n` ma wartość inną niż 5,
+* `n % 2 == 0` - prawdziwy, gdy zmienna `n` jest parzysta,
+* `n % 2 != 0` - prawdziwy, gdy zmienna `n` jest nieparzysta.
 
-We might want to check more than one condition:
+Możemy również chcieć sprawdzić więcej niż jeden warunek:
 
-* if we want all of given conditions to be true, we combine them with `&&` - e.g.: `a == 1 && b == 2 && c == 3`,
-* if we want at least one of given conditions to be true, we combine them with `||` - e.g.: `a == 1 || b == 2 || c == 3`.
+* jeśli chcemy, żeby wszystkie podane warunki wyły prawdziwe, to powinny one być połączone za pomocą `&&` - np: `a == 1 && b == 2 && c == 3`,
+* jeśli chcemy, żeby przynajmniej jeden warunek był prawdziwy, łączymy je za pomocą `||` - np.: `a == 1 || b == 2 || c == 3`.
 
-The simplest example would be if we wanted to run some code only if some condition was true.
+Najprostszym przykładem może być sytuacja, w której chcemy wykonać jakiś kod tylko wtedy, jeśli pewien warunek jest prawdziwy.
 
 ```scala
-if (condition) {
-  //the code here is executed only if the condition is true
+if (warunek) {
+  //kod zawarty tutaj będzie wykonany tylko, jeśli podany warunek jest prawdziwy
 }
 ```
 
-We might also want to execute some other code if the condition is false. Then the code looks like this:
+Możemy również chciećwykonać pewien kod, jeśli podany warunek jest fałszywy. Wówczas kod wygląda następująco:
 
 ```scala
-if (condition) {
-  //the code here is executed only if the condition is true
+if (warunek) {
+  //kod zawarty tutaj będzie wykonany tylko, jeśli podany warunek jest prawdziwy
 } else {
-  //the code here is executed only if the condition is false
+  //kod zawarty tutaj będzie wykonany tylko, jeśli podany warunek jest fałszywy
 }
 ```
 
-Another possibility is that if the first condition is false we want to check another one. And if that one is also false we want to check yet another one and so on. This can be achieved by writing the following:
+Inną możliwością jest, że jeśli pierwszy warunek jest fałszywy to chcemy sprawdzić inny. I jeśli ten drugi też jest fałszywy, chcemy sprawdzić jeszcze kolejny itd.. Można to osiągnąć, pisząc następujący kod:
 
 ```scala
-if (condition1) {
-  //codeA
-} else if (condition2) {
-  //codeB
-} else if (condition3) {
-  //codeC
+if (warunek1) {
+  //kod A
+} else if (warunek2) {
+  //kod B
+} else if (warunek3) {
+  //kod C
 } else {
-  //codeD
+  //kod D
 }
 ```
 
-In the sample above:
+W powyższym przykładzie:
 
-* if `condition1` is true, "codeA" will be executed,
-* if `condition1` is false but `condition2` is true, "codeB" will be executed,
-* if both `condition1` and `condition2` are false but `condition3` is true, "codeC" will be executed,
-* if all `condition1`, `condition2` and `condition3` are false, "codeD" will be executed.
+* jeśli `warunek1` jest prawdziwy, wykonany zostanie "kod A",
+* jeśli `warunek1` jest fałszywy ale `warunek2` jest prawdziwy, wykonany zostanie "kod B",
+* jeśli zarówno `warunek1` jak i `warunek2` są fałszywe ale `warunek3` jest prawdziwy, zostanie wykonany "kod C",
+* jeśli `warunek1`, `warunek2` i `warunek3` wszystkie są fałszywe, zostanie wykonany "kod D".
 
-It might also be worth mentioning that the last `else {...}` is optional - we don't have to write it if we don't want to execute anything if all `condition1`, `condition2` and `condition3` are false. Then the code would look like this:
+Warto również wspomnieć, że ostatni fragment: `else {...}` jest opcjonalny - nie musimy go pisać, jeśli nie chcemy wykonywać żadnego kodu w przypadku, gdy żaden warunek nie jest spełniony. Wówczas kod wyglądałby następująco:
 
 ```scala
-if (condition1) {
-  //codeA
-} else if (condition2) {
-  //codeB
-} else if (condition3) {
-  //codeC
+if (warunek1) {
+  //kod A
+} else if (warunek2) {
+  //kod B
+} else if (warunek3) {
+  //kod C
 }
 ```
 
-We will use it in the example below to create a triangle - a green one if the size is greater than 100, a red one otherwise. Try changing the value of size and see the result.
+Użyjmy wyrażeń warunkowych w poniższym przykładzie do stworzenia trójkąta - zielonego, jeśli jego bok jest dłuższy niż 100, czerwonego w przeciwnym przypadku. Spróbuj zmienić wartość `size` i zobacz rezultaty.
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/47"></iframe>
 
-It is also possible to depend a value assinged to a variable on some condition in a very concise way like this: `val s = if (n >= 0) n else -n`. This snippet assigns the value of n to s if n is non-negative and the opposite number (-n) if n is negative - either way, the value of s won't be negative.
+Można również w zwięzły sposób uzależnić wartość przypisywaną do zmiennej od jakiegoś warunku: `val s = if (n >= 0) n else -n`. Ten fragment kodu przypisuje zmiennej `s` wartość `n`, jeśli `n` jest nieujemne, i liczbę przeciwną (`-n`) jeśli `n` jest ujemne - tak czy inaczej, wartość `s` nie będzie ujemna.
 
-We will use it in the example below - it's very similar to the previous one, take a look.
+Tę opcję wykorzystamy w poniższym przykładzie - bardzo podobnym do poprzedniego.
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/28"></iframe>
 
-## Loops
+## Pętle
 
-Very often we want to execute the same (or similar) piece of code consecutively. The simplest way to achieve this is:
+Bardzo często chcemy wykonać ten sam (lub bardzo podobny) fragment kodu kilkakrotnie. Najprostszy sposób, by to osiągnąć, jest następujący:
 
 ```scala
 repeat(10) {
-  //put code here
+  //tutaj wpisz kod
 }
 ```
 
-Any code put in braces will be repeated 10 times. Of course, number 10 was chosen arbitrarily. You can also use an integer variable (or statement) instead.
+Kod wpisany w nawiasach klamrowych zostanie powtórzony 10 razy. Oczywiście liczba 10 została tu wybrana przypadkowo. W jej miejscu możesz także użyć zmiennej lub wyrażenia o wartości całkowitej.
 
 ```scala
 val N = 5
 repeat(N) {
-  //code A
+  //kod A
 }
 repeat(N + 2) {
-  //code B
+  //kod B
 }
 ```
 
-In the example above "code A" will be repeated 5 times, and "code B" will be repeated 7 times.
+W powyższym przykładzie "kod A" będzie powtórzony 5 razy a "kod B" będzie powtórzony 5 + 2 = 7 razy.
 
-The `repeat` construct allows only simple repetition. We would be able to use it in our example for drawing a square spiral but it would be better to use a `for` loop.
+Konstrukcja `repeat` pozwala jedynie na proste powtórzenia. Moglibyśmy jej użyć w naszym pszykładzie rysującym kwadratową spiralę, ale lepiej będzie użyć pętli `for`.
 
 ```scala
 for(i <- 1 to 10) {
@@ -145,41 +143,40 @@ for(i <- 1 to 10) {
 }
 ```
 
-In this example the code inside braces will be executed 10 times. Why? Because of `i <- 1 to 10` - this means that during each subsequent execution the variable `i` will have different value: starting with 1, then 2, 3, and so on, and finally 10, which together makes ten times! As a result we will draw ten sides of a spiral - with lengths 10, 20, 30, ..., 100 respectively.
+W tym przykładzie kod w nawiasach klamrowych zostanie wykonany 10 razy. Dlaczego? Ze względu na `i <- 1 to 10` - oznacza to, że podczas każdego kolejnego wykonania kodu w pętli zmienna `i` będzie miała inną wartość: zaczynając od 1, potem, 2, 3, itd., aż do 10, co razem daje 10 razy! W rezultacie narysujemy dziesięć krawędzi spirali - o długościach odpowiednio 10, 20, 30, ..., 100.
 
-There are various other forms of `for` loops in Scala, however we won't go into further details about them.
+W Scali istnieje wiele innych form pętli `for`, jednakże nie będziemy się tu zagłębiać w ich dalsze szczegóły.
 
-Another similar construct is a `while` loop.
+Kolejną podobną konstrukcją jest pętla `while`.
 
 ```scala
-while(condition) {
-  //put code here
+while(warunek) {
+  //jakiś kod
 }
-//some other code
+//inny kod
 ```
 
-The `condition` here can be any statement with a boolean value (see the "Conditionals" section above). The execution goes as follows:
+W miejscu `warunku` może być dowolne wyrażenie logiczne (patrz: sekcja "Wyrażenia warunkowe"). Wykonanie przebiega następująco:
 
-1. the condition is evaluated
-2. if it's false, all the code in braces is omitted and the execution moves to "some other code"
-3. if it's true, the code in braces is executed and then **we go back to point 1**
+ 1. wyliczana jest wartość warunku ("prawda lub "fałsz")  
+  1.a. jeśli warunek jest fałszywy, wykonywany jest kod w nawiasach klamrowych i wykonanie przechodzi do "innego kodu"  
+  1.b. jeśli warunek jest prawdziwy, wykonany zostaje kod w klamrowych nawiasach, a następnie **przechodzimy z powrotem do punktu 1.** (ewaluacji warunku)
 
-In the example below you can see how the `while` loop was used for creating the quadratic spiral until the length of the side was larger than 150.
+W poniższym przykładzie możesz zobaczyć, jak pętla `while` została użyta to narysowania kwadratowej spirali do momentu, gdy długość boku przekroczyła 150.
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/29"></iframe>
 
-### Excercises:
+### Ćwiczenia:
 
-1. Create similar triangle spirals but starting from the longest segment. Do it using:
+1. Stwórz podobne trójkątne spirale, zaczynając rysowanie od najdłuższego odcinka. Wykorzystaj do tego:
 
-* `repeat` ([&#8594;](/en/solutions#ex2.1.a)) 
-* `for` ([&#8594;](/en/solutions#ex2.1.b))
-* `while` ([&#8594;](/en/solutions#ex2.1.c))
+* konstrukcję `repeat` ([&#8594;](/pl/solutions#ex2.1.a)) 
+* pętlę `for` ([&#8594;](/pl/solutions#ex2.1.b))
+* pętlę `while` ([&#8594;](/pl/solutions#ex2.1.c))
 
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/49"></iframe>
 
-[Back to table of contents](/en)
+[Strona główna](/pl)
 
-[Previous: Introduction](/en/1_introduction)
-
-[Next: Functions](/en/3_functions)
+[Poprzedni rozdział: Wprowadzenie](/pl/1_introduction)  
+[Następny rozdział: Funkcje](/pl/3_functions)

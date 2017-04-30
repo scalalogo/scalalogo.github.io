@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Back to Table of contents](/en)
+[Back to home page](/en)
 
 ## Sample solutions
 
@@ -43,3 +43,5 @@ layout: default
 
 <a name="ex4.3"></a>Ex. 3.
 <iframe height="620" frameborder="0" style="width: 100%; overflow: hidden;" src="https://embed.scalafiddle.io/embed?sfid=okXrWZp/46"></iframe>
+
+[Back to home page](/en)
