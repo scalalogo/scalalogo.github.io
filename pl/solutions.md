@@ -4,7 +4,7 @@ layout: default
 
 [Strona główna](/pl)
 
-## Przykłądowe rozwiązania
+## Przykładowe rozwiązania
 
 ### Rozdział 1
 
